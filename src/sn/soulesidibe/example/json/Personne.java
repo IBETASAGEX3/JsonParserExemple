@@ -3,16 +3,14 @@ package sn.soulesidibe.example.json;
 public class Personne {
 
     private String nom;
-    private String prenom;
     private String age;
-    private String genre;
+    private String adress;
 
-    public Personne(String nom, String prenom, String age, String genre) {
+    public Personne(String nom, String prenom, String age, String adress) {
 	super();
 	this.nom = nom;
-	this.prenom = prenom;
 	this.age = age;
-	this.genre = genre;
+	this.adress = adress;
     }
 
     public Personne() {
@@ -27,14 +25,6 @@ public class Personne {
 	this.nom = nom;
     }
 
-    public String getPrenom() {
-	return prenom;
-    }
-
-    public void setPrenom(String prenom) {
-	this.prenom = prenom;
-    }
-
     public String getAge() {
 	return age;
     }
@@ -43,18 +33,18 @@ public class Personne {
 	this.age = age;
     }
 
-    public String getGenre() {
-	return genre;
+    public String getAdress() {
+	return adress;
     }
 
-    public void setGenre(String genre) {
-	this.genre = genre;
+    public void setAdress(String adress) {
+	this.adress = adress;
     }
 
     @Override
     public String toString() {
-	return "Personne [nom=" + nom + ", prenom=" + prenom + ", age=" + age
-		+ ", genre=" + genre + "]";
+	return "Personne [nom=" + nom + ", age=" + age + ", adress=" + adress
+		+ "]";
     }
 
 }
